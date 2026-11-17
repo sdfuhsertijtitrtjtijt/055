@@ -1,0 +1,22 @@
+.enrollment-form { padding: 25px; border: 1px solid #e8eaf2; border-radius: 15px; background: #fff; box-shadow: 0 8px 25px #20295908; }
+.form-heading { display: flex; align-items: start; justify-content: space-between; gap: 16px; margin-bottom: 20px; }
+.form-heading h3 { margin: 5px 0 4px; color: #252d52; font: 800 19px Manrope,sans-serif; letter-spacing: -.6px; }
+.form-heading p { margin: 0; color: #7d8498; font-size: 10px; }
+.required-note { padding-top: 4px; color: #8a90a1; font-size: 8px; white-space: nowrap; }
+.required-note b,.form-field label b,.terms-check b { color: #d65b69; }
+.form-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px 13px; }
+.form-field { min-width: 0; }
+.form-field-wide { grid-column: 1/-1; }
+.form-field label { display: block; margin-bottom: 6px; color: #434b68; font-size: 9px; font-weight: 700; }
+.form-field input,.form-field select { display: block; width: 100%; height: 39px; padding: 0 10px; border: 1px solid #e2e4ed; border-radius: 7px; outline: none; color: #333b59; background: #fdfdff; font-size: 10px; transition: border-color .15s,box-shadow .15s; }
+.form-field input::placeholder { color: #a4a9b8; }
+.form-field input:focus,.form-field select:focus { border-color: #8e81dd; box-shadow: 0 0 0 3px #8e81dd1c; }
+.form-field input[aria-invalid=true],.form-field select[aria-invalid=true] { border-color: #e28b95; background: #fffafa; }
+.field-error { display: block; margin-top: 5px; color: #c84c5b; font-size: 8px; line-height: 1.4; }
+.terms-check { display: flex; align-items: start; gap: 8px; margin-top: 18px; color: #72798d; font-size: 9px; line-height: 1.6; cursor: pointer; }
+.terms-check input { flex: 0 0 auto; width: 14px; height: 14px; margin: 1px 0 0; accent-color: #7063c5; }
+.terms-check.has-error { color: #bd4d5a; }
+.submit-button { display: flex; align-items: center; justify-content: space-between; width: 100%; min-height: 42px; margin-top: 16px; padding: 0 15px; border: 0; border-radius: 8px; color: #fff; background: linear-gradient(105deg,#4d56b8,#7762c9); box-shadow: 0 7px 16px #5448ad26; font-size: 10px; font-weight: 800; transition: filter .15s,transform .15s; }
+.submit-button:hover { transform: translateY(-1px); filter: brightness(1.06); }
+.submit-button span { font-size: 15px; }
+.form-footnote { margin: 10px 0 0; color: #9a9eac; text-align: center; font-size: 8px; }

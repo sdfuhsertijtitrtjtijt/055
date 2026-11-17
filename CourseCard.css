@@ -1,0 +1,18 @@
+.course-grid { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 13px; }
+.course-card { position: relative; display: flex; flex-direction: column; min-height: 222px; padding: 19px; border: 1px solid #e8eaf2; border-radius: 13px; text-align: left; color: #283052; background: #fff; box-shadow: 0 4px 15px #242b5505; transition: transform .18s,border-color .18s,box-shadow .18s,background .18s; }
+.course-card:hover,.course-card.is-selected { transform: translateY(-3px); border-color: #b7afe8; box-shadow: 0 12px 28px #36316614; }
+.course-card.is-selected { background: linear-gradient(150deg,#fff,#faf9ff); }
+.course-icon { display: grid; flex: 0 0 auto; place-items: center; width: 39px; height: 39px; border-radius: 11px; font-size: 18px; }
+.course-icon-violet { color: #6459bd; background: #eeebff; }
+.course-icon-blue { color: #3970b4; background: #e8f2ff; }
+.course-icon-pink { color: #ad5b94; background: #fcebf7; }
+.course-icon-green { color: #378971; background: #e5f5ee; }
+.course-icon-orange { color: #b47736; background: #fff1df; }
+.course-icon-cyan { color: #398599; background: #e4f6fa; }
+.course-card-meta { display: block; margin-top: 15px; color: #8a91a4; font-size: 8px; font-weight: 700; letter-spacing: .5px; text-transform: uppercase; }
+.course-card-title { display: block; max-width: 90%; margin-top: 6px; color: #273052; font: 700 13px/1.4 Manrope,sans-serif; }
+.course-card-description { display: block; margin-top: 7px; color: #838a9c; font-size: 9px; line-height: 1.7; }
+.course-card-footer { display: flex; align-items: center; justify-content: space-between; gap: 10px; margin-top: auto; padding-top: 15px; color: #868da0; font-size: 8px; }
+.course-card-footer strong { color: #5148a5; font: 800 11px Manrope,sans-serif; }
+.course-card-arrow { position: absolute; top: 17px; right: 17px; display: grid; place-items: center; width: 23px; height: 23px; border-radius: 7px; color: #8178bd; background: #f5f3ff; font-size: 11px; }
+.course-card.is-selected .course-card-arrow { color: #fff; background: #7164c6; }
